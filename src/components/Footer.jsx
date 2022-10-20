@@ -11,7 +11,7 @@ import twitter from "./ui/twitter.png";
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 `;
 
 const Wrapper = styled.div`
@@ -136,7 +136,7 @@ const TextWrapper = styled.div`
 
 const Copyright = styled.div`
   display: flex;
-  margin: 10px;
+  margin: 20px 20px 25px ;
   font-size: 14px;
   color: #808080;
 `;
