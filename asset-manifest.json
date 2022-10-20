@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/totalitycorp-frontend-challenge/static/css/main.e6c13ad2.css",
-    "main.js": "/totalitycorp-frontend-challenge/static/js/main.d85295d8.js",
+    "main.js": "/totalitycorp-frontend-challenge/static/js/main.4629fbef.js",
     "static/media/apple-yum.jpg": "/totalitycorp-frontend-challenge/static/media/apple-yum.503918df5dc0c0f9d110.jpg",
     "static/media/latte.jpg": "/totalitycorp-frontend-challenge/static/media/latte.2664ea9c171db10378b5.jpg",
     "static/media/million-stars.jpg": "/totalitycorp-frontend-challenge/static/media/million-stars.9663e7c1025390a70973.jpg",
@@ -15,10 +15,10 @@
     "static/media/facebook.png": "/totalitycorp-frontend-challenge/static/media/facebook.bfd1cfff9f9521198b26.png",
     "index.html": "/totalitycorp-frontend-challenge/index.html",
     "main.e6c13ad2.css.map": "/totalitycorp-frontend-challenge/static/css/main.e6c13ad2.css.map",
-    "main.d85295d8.js.map": "/totalitycorp-frontend-challenge/static/js/main.d85295d8.js.map"
+    "main.4629fbef.js.map": "/totalitycorp-frontend-challenge/static/js/main.4629fbef.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.d85295d8.js"
+    "static/js/main.4629fbef.js"
   ]
 }
