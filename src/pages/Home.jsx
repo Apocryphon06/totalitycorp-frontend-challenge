@@ -6,6 +6,7 @@ import million from "../images/million-stars.jpg";
 import rewards from "../images/rewards.jpg";
 import latte from "../images/latte.jpg";
 import apple from "../images/apple-yum.jpg";
+import Footer from "../components/Footer";
 
 const ImageContainer = styled.div`
   background-color: #${(props) => props.bg};
@@ -229,7 +230,7 @@ function Home() {
           deltastarbucks.com/terms
         </DisclaimerText>
       </Disclaimer>
-      something
+      <Footer />
     </div>
   );
 }
