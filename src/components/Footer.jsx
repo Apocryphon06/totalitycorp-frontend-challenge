@@ -1,12 +1,23 @@
 import { KeyboardArrowDown } from "@material-ui/icons";
 import React from "react";
 import styled from "styled-components";
+import spotify from "./ui/spotify.png";
+import facebook from "./ui/facebook.png";
+import pinterest from "./ui/pinterest.png";
+import instagram from "./ui/instagram.png";
+import youtube from "./ui/youtube.png";
+import twitter from "./ui/twitter.png";
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
 
 const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
   width: 90vw;
-  height: 90vh;
+  margin-bottom: 50px;
   @media (max-width: 768px) {
     flex-direction: column;
   }
@@ -31,12 +42,15 @@ const ActionWrapper = styled.div`
   cursor: pointer;
 `;
 const Action = styled.div`
-  padding: 10px;
+  padding: 5px;
   border-radius: 50%;
   &:hover {
     cursor: pointer;
     background-color: #dfdfdf;
   }
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
   @media (min-width: 768px) {
     display: none;
   }
@@ -65,74 +79,124 @@ const ColumnWrapper = styled.div`
   }
 `;
 
+const MediaWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  margin: 25px;
+  padding-top: 30px;
+  border-top: 2px solid #dfdfdf;
+`;
+
+const Media = styled.div`
+  display: flex;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  &:hover {
+    background-color: #dfdfdf;
+  }
+`;
+
+const Icon = styled.img`
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  &:hover {
+    background-color: #dfdfdf;
+  }
+`;
+
 function Footer() {
   return (
-    <Wrapper>
-      <ColumnWrapper>
-        <ActionWrapper>
-          <ColumnHeader>About Us</ColumnHeader>
-          <Action>
-            <KeyboardArrowDown />
-          </Action>
-        </ActionWrapper>
-        <Item>Our Company</Item>
-        <Item>Our Coffee</Item>
-        <Item>Stories and News</Item>
-        <Item>Starbucks Archive</Item>
-        <Item>Investor Relations</Item>
-        <Item>Customer Service</Item>
-      </ColumnWrapper>
-      <ColumnWrapper>
-        <ActionWrapper>
-          <ColumnHeader>Careers</ColumnHeader>
-          <Action>
-            <KeyboardArrowDown />
-          </Action>
-        </ActionWrapper>
-        <Item>Culture and Values</Item>
-        <Item>Inclusion, Diversity, and Equity</Item>
-        <Item>College Achivement Plan</Item>
-        <Item>Alumini Community</Item>
-        <Item>U.S. Careers</Item>
-        <Item>International Careers</Item>
-      </ColumnWrapper>
-      <ColumnWrapper>
-        <ActionWrapper>
-          <ColumnHeader>Social Impact</ColumnHeader>
-          <Action>
-            <KeyboardArrowDown />
-          </Action>
-        </ActionWrapper>
+    <Container>
+      <Wrapper>
+        <ColumnWrapper>
+          <ActionWrapper>
+            <ColumnHeader>About Us</ColumnHeader>
+            <Action>
+              <KeyboardArrowDown />
+            </Action>
+          </ActionWrapper>
+          <Item>Our Company</Item>
+          <Item>Our Coffee</Item>
+          <Item>Stories and News</Item>
+          <Item>Starbucks Archive</Item>
+          <Item>Investor Relations</Item>
+          <Item>Customer Service</Item>
+        </ColumnWrapper>
+        <ColumnWrapper>
+          <ActionWrapper>
+            <ColumnHeader>Careers</ColumnHeader>
+            <Action>
+              <KeyboardArrowDown />
+            </Action>
+          </ActionWrapper>
+          <Item>Culture and Values</Item>
+          <Item>Inclusion, Diversity, and Equity</Item>
+          <Item>College Achivement Plan</Item>
+          <Item>Alumini Community</Item>
+          <Item>U.S. Careers</Item>
+          <Item>International Careers</Item>
+        </ColumnWrapper>
+        <ColumnWrapper>
+          <ActionWrapper>
+            <ColumnHeader>Social Impact</ColumnHeader>
+            <Action>
+              <KeyboardArrowDown />
+            </Action>
+          </ActionWrapper>
 
-        <Item>People</Item>
-        <Item>Planet</Item>
-        <Item>Environmental and Social Impact Reporting</Item>
-      </ColumnWrapper>
-      <ColumnWrapper>
-        <ActionWrapper>
-          <ColumnHeader>For Business Partners</ColumnHeader>
-          <Action>
-            <KeyboardArrowDown />
-          </Action>
-        </ActionWrapper>
-        <Item>Landload Support Center</Item>
-        <Item>Suppliers</Item>
-        <Item>Corporate Gift Card Sales</Item>
-        <Item>Office and Foodservice Coffee</Item>
-      </ColumnWrapper>
-      <ColumnWrapper>
-        <ActionWrapper>
-          <ColumnHeader>Order and Pickup</ColumnHeader>
-          <Action>
-            <KeyboardArrowDown />
-          </Action>
-        </ActionWrapper>
-        <Item>Order on the App</Item>
-        <Item>Order on the Web</Item>
-        <Item>Delivery</Item>
-        <Item>Order and Pickup Options</Item>
-      </ColumnWrapper>
-    </Wrapper>
+          <Item>People</Item>
+          <Item>Planet</Item>
+          <Item>Environmental and Social Impact Reporting</Item>
+        </ColumnWrapper>
+        <ColumnWrapper>
+          <ActionWrapper>
+            <ColumnHeader>For Business Partners</ColumnHeader>
+            <Action>
+              <KeyboardArrowDown />
+            </Action>
+          </ActionWrapper>
+          <Item>Landload Support Center</Item>
+          <Item>Suppliers</Item>
+          <Item>Corporate Gift Card Sales</Item>
+          <Item>Office and Foodservice Coffee</Item>
+        </ColumnWrapper>
+        <ColumnWrapper>
+          <ActionWrapper>
+            <ColumnHeader>Order and Pickup</ColumnHeader>
+            <Action>
+              <KeyboardArrowDown />
+            </Action>
+          </ActionWrapper>
+          <Item>Order on the App</Item>
+          <Item>Order on the Web</Item>
+          <Item>Delivery</Item>
+          <Item>Order and Pickup Options</Item>
+          <Item>Explore and Find Coffee for Home</Item>
+        </ColumnWrapper>
+      </Wrapper>
+      <MediaWrapper>
+        <Media>
+          <Icon src={spotify} alt="spotify" />
+        </Media>
+        <Media>
+          <Icon src={facebook} alt="facebook" />
+        </Media>
+        <Media>
+          <Icon src={pinterest} alt="pinterest" />
+        </Media>
+        <Media>
+          <Icon src={instagram} alt="instagram" />
+        </Media>
+        <Media>
+          <Icon src={youtube} alt="youtube" />
+        </Media>
+        <Media>
+          <Icon src={twitter} alt="twitter" />
+        </Media>
+      </MediaWrapper>
+    </Container>
   );
 }
 
