@@ -96,13 +96,40 @@ const SubHeading = styled.div`
   color: #1e3932;
   font-size: 18px;
   letter-spacing: 1px;
-  margin: 10px 0;
+  margin: 10px 5px;
 `;
 
 const ListWrapper = styled.div`
   color: #1e3932;
   font-size: 18px;
   line-height: 2em;
+`;
+
+const Disclaimer = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 40vh;
+  align-items: center;
+  padding: 40px 0;
+`;
+
+const DisclaimerText = styled.div`
+  width: 45vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 20px;
+  line-height: 2em;
+  color: #27251f;
+  @media (max-width: 768px) {
+    font-size: 12px;
+    line-height: 1.5 em;
+    width: 90vw;
+  }
 `;
 
 function Home() {
@@ -148,7 +175,9 @@ function Home() {
       <ImageContainer bg="006241" direction="row">
         <Image src={latte} alt="latte" />
         <InfoContainer align="center" content="center">
-          <Title style={{ color: "white", fontSize: "34px", letterSpacing:'4px'}}>
+          <Title
+            style={{ color: "white", fontSize: "34px", letterSpacing: "4px" }}
+          >
             Perfectly pumpkin
           </Title>
           <Description style={{ color: "white" }}>
@@ -161,10 +190,16 @@ function Home() {
         </InfoContainer>
       </ImageContainer>
 
-      <ImageContainer bg="006241" direction="row-reverse">
+      <ImageContainer
+        style={{ marginBottom: 0 }}
+        bg="006241"
+        direction="row-reverse"
+      >
         <Image src={apple} alt="apple-yum" />
         <InfoContainer align="center" content="center">
-          <Title style={{ color: "white", fontSize: "34px",letterSpacing:'2px' }}>
+          <Title
+            style={{ color: "white", fontSize: "34px", letterSpacing: "2px" }}
+          >
             Layers of baked apple yum
           </Title>
           <Description style={{ color: "white" }}>
@@ -176,6 +211,24 @@ function Home() {
           </Button>
         </InfoContainer>
       </ImageContainer>
+      <Disclaimer>
+        <DisclaimerText>
+          *NO PURCHASE NECESSARY. Participating stores only. Ends 10/23/22. To
+          enter and for Official Rules, visit starbucksstardays.com.
+        </DisclaimerText>
+        <DisclaimerText>
+          Entrants can receive a maximum of 2 entries per day.
+        </DisclaimerText>
+
+        <DisclaimerText>
+          **Excludes taxes and gratuities. At participating stores. Some
+          restrictions apply. 150 Stars deposited after first qualifying
+          Starbucks purchase. Flights purchased close to departure may not earn
+          double Stars. Stars may not be earned on purchases of alcohol,
+          Starbucks Cards and Starbucks Card reloads. For details, visit
+          deltastarbucks.com/terms
+        </DisclaimerText>
+      </Disclaimer>
     </div>
   );
 }
