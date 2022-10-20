@@ -11,6 +11,7 @@ import twitter from "./ui/twitter.png";
 const Container = styled.div`
   display: flex;
   flex-direction: column;
+  margin-bottom: 40px;
 `;
 
 const Wrapper = styled.div`
@@ -85,6 +86,9 @@ const MediaWrapper = styled.div`
   margin: 25px;
   padding-top: 30px;
   border-top: 2px solid #dfdfdf;
+  @media (max-width: 768px) {
+    margin: 10px;
+  }
 `;
 
 const Media = styled.div`
@@ -104,6 +108,37 @@ const Icon = styled.img`
   &:hover {
     background-color: #dfdfdf;
   }
+`;
+
+const Text = styled.div`
+  display: flex;
+  font-size:16px
+  cursor: pointer;
+  &:hover{
+    text-decoration: underline;
+  }
+  margin: 0 20px;
+  @media (max-width: 768px) {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+`;
+
+const TextWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: start
+  padding-bottom:20px;
+  @media (max-width: 768px) {
+    flex-direction:column;
+  }
+`;
+
+const Copyright = styled.div`
+  display: flex;
+  margin: 10px;
+  font-size: 14px;
+  color: #808080;
 `;
 
 function Footer() {
@@ -196,6 +231,13 @@ function Footer() {
           <Icon src={twitter} alt="twitter" />
         </Media>
       </MediaWrapper>
+      <TextWrapper>
+        <Text>Privacy Policy</Text> <Text>Terms of Use</Text>{" "}
+        <Text>CA Supply Chain Art</Text> <Text>Cookie Preferences</Text>
+      </TextWrapper>
+      <Copyright>
+        © 2022 Starbucks Coffee Company. All rights reserved.
+      </Copyright>
     </Container>
   );
 }
