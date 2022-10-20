@@ -32,9 +32,9 @@ Next moved on to designing the disclaimer banner and the footer component of the
 
 ## Footer
 
-<img src="./screenshots/footer" alt="footer" >
+<img src="./screenshots/footer.png" alt="footer" >
 
 ## Image Container and Info Containers
 
-<img src="./screenshots/info-container" alt="Img-Info-Container" >
+<img src="./screenshots/info-container.png" alt="Img-Info-Container" >
 
