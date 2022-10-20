@@ -112,6 +112,7 @@ const Disclaimer = styled.div`
   height: 40vh;
   align-items: center;
   padding: 40px 0;
+  border-bottom: 2px solid #dfdfdf;
 `;
 
 const DisclaimerText = styled.div`
@@ -189,7 +190,6 @@ function Home() {
           </Button>
         </InfoContainer>
       </ImageContainer>
-
       <ImageContainer
         style={{ marginBottom: 0 }}
         bg="006241"
@@ -229,6 +229,7 @@ function Home() {
           deltastarbucks.com/terms
         </DisclaimerText>
       </Disclaimer>
+      something
     </div>
   );
 }
